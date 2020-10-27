@@ -1,0 +1,6 @@
+﻿  main.c
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\wincontypes.h(103): warning C4005: 'MOUSE_MOVED': macro redefinition
+  c:\users\andy\downloads\pdcurs36\curses.h(155): note: see previous definition of 'MOUSE_MOVED'
+c:\users\andy\source\repos\scrollerthingy\scrollerthingy\main.c(31): warning C4013: 'time' undefined; assuming extern returning int
+c:\users\andy\source\repos\scrollerthingy\scrollerthingy\main.c(34): warning C4113: 'DWORD (__stdcall *)()' differs in parameter lists from 'LPTHREAD_START_ROUTINE'
+  scrollerThingy.vcxproj -> C:\Users\andy\source\repos\scrollerThingy\Debug\scrollerThingy.exe
