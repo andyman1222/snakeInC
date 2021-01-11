@@ -1,2 +1,2 @@
 # snakeInC
-Snake in C
+Not actually Snake in C
