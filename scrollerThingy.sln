@@ -1,18 +1,34 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2000
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scrollerThingy", "scrollerThingy\scrollerThingy.vcxproj", "{1401495E-D0E2-47BB-AF21-D7C2927C62F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		client|x64 = client|x64
+		client|x86 = client|x86
+		client-debug|x64 = client-debug|x64
+		client-debug|x86 = client-debug|x86
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
+		server|x64 = server|x64
+		server|x86 = server|x86
+		server-debug|x64 = server-debug|x64
+		server-debug|x86 = server-debug|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.client|x64.ActiveCfg = client|x64
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.client|x64.Build.0 = client|x64
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.client|x86.ActiveCfg = client|Win32
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.client|x86.Build.0 = client|Win32
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.client-debug|x64.ActiveCfg = client-debug|x64
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.client-debug|x64.Build.0 = client-debug|x64
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.client-debug|x86.ActiveCfg = client-debug|Win32
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.client-debug|x86.Build.0 = client-debug|Win32
 		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.Debug|x64.ActiveCfg = Debug|x64
 		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.Debug|x64.Build.0 = Debug|x64
 		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.Debug|x86.ActiveCfg = Debug|Win32
@@ -21,6 +37,14 @@ Global
 		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.Release|x64.Build.0 = Release|x64
 		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.Release|x86.ActiveCfg = Release|Win32
 		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.Release|x86.Build.0 = Release|Win32
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.server|x64.ActiveCfg = server|x64
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.server|x64.Build.0 = server|x64
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.server|x86.ActiveCfg = server|Win32
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.server|x86.Build.0 = server|Win32
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.server-debug|x64.ActiveCfg = server-debug|x64
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.server-debug|x64.Build.0 = server-debug|x64
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.server-debug|x86.ActiveCfg = server-debug|Win32
+		{1401495E-D0E2-47BB-AF21-D7C2927C62F3}.server-debug|x86.Build.0 = server-debug|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

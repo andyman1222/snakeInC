@@ -1,0 +1,1 @@
+C:\Users\herberac\source\repos\snakeInC\scrollerThingy\client-debug\scrollerThingy.vcxproj.CopyComplete
