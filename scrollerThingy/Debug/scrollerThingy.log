@@ -1,67 +1,57 @@
 ﻿  main.c
-C:\Users\herberac\source\repos\vcpkg\installed\x86-windows\include\curses.h(190,1): warning C4005: 'MOUSE_MOVED': macro redefinition
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\wincontypes.h(103): message : see previous definition of 'MOUSE_MOVED'
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\conio.h(453,30): warning C4002: too many arguments for function-like macro invocation 'getch'
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\conio.h(453,41): warning C4273: 'wgetch': inconsistent dll linkage
-C:\Users\herberac\source\repos\vcpkg\installed\x86-windows\include\curses.h(1114,16): message : see previous definition of 'wgetch'
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\conio.h(469,14): warning C4273: 'PDC_ungetch': inconsistent dll linkage
-C:\Users\herberac\source\repos\vcpkg\installed\x86-windows\include\curses.h(1323,16): message : see previous definition of 'PDC_ungetch'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(155,85): warning C4047: '==': 'int [40]' differs in levels of indirection from 'int'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(155,109): warning C4047: '==': 'int [40]' differs in levels of indirection from 'int'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(147,20): warning C4101: 'prevPrevX': unreferenced local variable
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(147,31): warning C4101: 'prevPrevY': unreferenced local variable
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(198,19): warning C4047: 'function': 'char *' differs in levels of indirection from 'void *[348]'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(198,16): warning C4024: 'recv': different types for formal and actual parameter 2
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(250,17): warning C4047: 'function': 'const char *' differs in levels of indirection from 'void *[348]'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(250,14): warning C4024: 'atoi': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(260,16): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(260,13): warning C4024: 'recv': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(260,21): warning C4047: 'function': 'char *' differs in levels of indirection from 'void *[348]'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(260,18): warning C4024: 'recv': different types for formal and actual parameter 2
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(281,19): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(281,16): warning C4024: 'shutdown': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(283,19): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(283,16): warning C4024: 'closesocket': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(286,18): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(286,15): warning C4024: 'closesocket': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(294,26): warning C4047: '==': 'SOCKET *' differs in levels of indirection from 'SOCKET'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(311,11): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(311,10): warning C4024: 'send': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(311,33): warning C4047: 'function': 'int' differs in levels of indirection from 'void *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(311,29): warning C4024: 'send': different types for formal and actual parameter 4
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(314,13): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(314,12): warning C4024: 'send': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(314,27): warning C4133: 'function': incompatible types - from 'snek *' to 'const char *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(314,54): warning C4047: 'function': 'int' differs in levels of indirection from 'void *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(314,50): warning C4024: 'send': different types for formal and actual parameter 4
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(319,13): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(319,12): warning C4024: 'send': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(319,27): warning C4133: 'function': incompatible types - from 'item *' to 'const char *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(319,47): warning C4047: 'function': 'int' differs in levels of indirection from 'void *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(319,43): warning C4024: 'send': different types for formal and actual parameter 4
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(322,39): warning C4133: 'function': incompatible types - from 'WORD (__stdcall *)(void *)' to 'LPTHREAD_START_ROUTINE'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(325,18): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(325,17): warning C4024: 'closesocket': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(293,1): warning C4047: 'initializing': 'SOCKET *' differs in levels of indirection from 'SOCKET'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(349,37): warning C4113: 'DWORD (__stdcall *)()' differs in parameter lists from 'LPTHREAD_START_ROUTINE'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(355,12): warning C4013: 'time' undefined; assuming extern returning int
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(375,36): warning C4113: 'WORD (__stdcall *)()' differs in parameter lists from 'LPTHREAD_START_ROUTINE'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(375,36): warning C4133: 'function': incompatible types - from 'WORD (__stdcall *)()' to 'LPTHREAD_START_ROUTINE'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(401,30): warning C4133: 'function': incompatible types - from 'snek *' to 'const char *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(461,27): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(461,25): warning C4024: 'send': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(461,41): warning C4133: 'function': incompatible types - from 'item *' to 'const char *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(469,24): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(469,22): warning C4024: 'send': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(469,27): warning C4133: 'function': incompatible types - from 'snek *' to 'const char *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(543,35): warning C4133: '=': incompatible types - from 'snek *' to 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(548,33): warning C4113: 'DWORD (__stdcall *)()' differs in parameter lists from 'LPTHREAD_START_ROUTINE'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(560,33): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(560,31): warning C4024: 'shutdown': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(562,33): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(562,31): warning C4024: 'closesocket': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(564,32): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(564,30): warning C4024: 'closesocket': different types for formal and actual parameter 1
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(191): warning C4716: 'keyThread': must return a value
-C:\Users\herberac\source\repos\snakeInC\scrollerThingy\main.c(253): warning C4716: 'clientListen': must return a value
-  scrollerThingy.vcxproj -> C:\Users\herberac\source\repos\snakeInC\Debug\scrollerThingy.exe
+D:\vcpkg\installed\x86-windows\include\curses.h(190,1): warning C4005: 'MOUSE_MOVED': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\wincontypes.h(103): message : see previous definition of 'MOUSE_MOVED'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\conio.h(444,30): warning C4002: too many arguments for function-like macro invocation 'getch'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\conio.h(444,41): warning C4273: 'wgetch': inconsistent dll linkage
+D:\vcpkg\installed\x86-windows\include\curses.h(1114,16): message : see previous definition of 'wgetch'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\conio.h(460,14): warning C4273: 'PDC_ungetch': inconsistent dll linkage
+D:\vcpkg\installed\x86-windows\include\curses.h(1323,16): message : see previous definition of 'PDC_ungetch'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(158,85): warning C4047: '==': 'int [40]' differs in levels of indirection from 'int'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(158,109): warning C4047: '==': 'int [40]' differs in levels of indirection from 'int'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(150,20): warning C4101: 'prevPrevX': unreferenced local variable
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(150,31): warning C4101: 'prevPrevY': unreferenced local variable
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(204,32): warning C4133: 'function': incompatible types - from 'snek *' to 'const char *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(244,19): warning C4047: 'function': 'char *' differs in levels of indirection from 'void *[8360]'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(244,16): warning C4024: 'recv': different types for formal and actual parameter 2
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(287,18): warning C4047: 'function': 'const char *' differs in levels of indirection from 'void *[8360]'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(287,15): warning C4024: 'atoi': different types for formal and actual parameter 1
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(298,16): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(298,13): warning C4024: 'recv': different types for formal and actual parameter 1
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(298,21): warning C4047: 'function': 'char *' differs in levels of indirection from 'void *[348]'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(298,18): warning C4024: 'recv': different types for formal and actual parameter 2
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(314,19): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(314,16): warning C4024: 'shutdown': different types for formal and actual parameter 1
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(316,19): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(316,16): warning C4024: 'closesocket': different types for formal and actual parameter 1
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(319,18): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(319,15): warning C4024: 'closesocket': different types for formal and actual parameter 1
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(327,26): warning C4047: '==': 'SOCKET *' differs in levels of indirection from 'SOCKET'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(344,11): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(344,10): warning C4024: 'send': different types for formal and actual parameter 1
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(344,33): warning C4047: 'function': 'int' differs in levels of indirection from 'void *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(344,29): warning C4024: 'send': different types for formal and actual parameter 4
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(347,25): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(347,23): warning C4024: 'send': different types for formal and actual parameter 1
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(347,29): warning C4133: 'function': incompatible types - from 'datum *' to 'const char *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(348,39): warning C4133: 'function': incompatible types - from 'WORD (__stdcall *)(void *)' to 'LPTHREAD_START_ROUTINE'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(351,18): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(351,17): warning C4024: 'closesocket': different types for formal and actual parameter 1
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(326,1): warning C4047: 'initializing': 'SOCKET *' differs in levels of indirection from 'SOCKET'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(375,37): warning C4113: 'DWORD (__stdcall *)()' differs in parameter lists from 'LPTHREAD_START_ROUTINE'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(381,12): warning C4013: 'time' undefined; assuming extern returning int
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(401,36): warning C4113: 'WORD (__stdcall *)()' differs in parameter lists from 'LPTHREAD_START_ROUTINE'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(401,36): warning C4133: 'function': incompatible types - from 'WORD (__stdcall *)()' to 'LPTHREAD_START_ROUTINE'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(507,23): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(507,21): warning C4024: 'send': different types for formal and actual parameter 1
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(507,27): warning C4133: 'function': incompatible types - from 'datum *' to 'const char *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(575,37): warning C4133: '=': incompatible types - from 'snek *' to 'SOCKET *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(580,33): warning C4113: 'DWORD (__stdcall *)()' differs in parameter lists from 'LPTHREAD_START_ROUTINE'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(593,33): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(593,31): warning C4024: 'shutdown': different types for formal and actual parameter 1
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(595,33): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(595,31): warning C4024: 'closesocket': different types for formal and actual parameter 1
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(597,32): warning C4047: 'function': 'SOCKET' differs in levels of indirection from 'SOCKET *'
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(597,30): warning C4024: 'closesocket': different types for formal and actual parameter 1
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(237): warning C4716: 'keyThread': must return a value
+B:\Documents\GitHub\snakeInC\scrollerThingy\main.c(291): warning C4716: 'clientListen': must return a value
+  scrollerThingy.vcxproj -> B:\Documents\GitHub\snakeInC\Debug\scrollerThingy.exe

@@ -1,4 +1,4 @@
-﻿#define WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 #include <windows.h>
 #include <winsock2.h>
@@ -53,7 +53,7 @@ typedef struct items {
 
 
 
-typedef struct d{
+typedef struct d {
 	item itemList[maxItems];
 	struct snek snekList[maxPlayers];
 } datum;
@@ -71,7 +71,7 @@ struct snek* spawnPlayer(int i) {
 		d.snekList[i].yPos = rand() % yMax;
 		d.snekList[i].len = 1;
 		d.snekList[i].valid = 1;
-		d.snekList[i].color = (rand()%6)+1;
+		d.snekList[i].color = (rand() % 6) + 1;
 		return &d.snekList[i];
 	}
 	else return NULL;
@@ -96,7 +96,7 @@ item* spawnItem(int x, int y, int movable) {
 		d.itemList[i].n = 1;
 		return &d.itemList[i];
 	}
-	
+
 	return NULL;
 }
 
@@ -113,7 +113,7 @@ void randomPos(int i) {
 				break;
 			}
 		}
-		for (int l = 0; l < maxPlayers; l ++) {
+		for (int l = 0; l < maxPlayers; l++) {
 			if (d.itemList[i].x == d.snekList[l].xPos && d.itemList[i].y == d.snekList[l].yPos) {
 				loop = 1;
 				break;
@@ -127,7 +127,7 @@ void randomPos(int i) {
 		}
 
 	} while (loop);
-	
+
 }
 
 void addLength(struct snek* s) {
@@ -143,7 +143,7 @@ void printSnek(struct snek* s) {
 	if (has_colors()) {
 		attron(COLOR_PAIR(s->color));
 	}
-	if(s->id == id)
+	if (s->id == id)
 		mvprintw(s->yPos, s->xPos, "@");
 	else
 		mvprintw(s->yPos, s->xPos, "o");
@@ -158,11 +158,11 @@ void printSnek(struct snek* s) {
 			if ((prevX == s->pointsX[i] && prevY == s->pointsY[i]) || (s->pointsX == s->xPos && s->pointsY == s->yPos)) {
 
 			}
-			else if ((i == s->len-1 && prevX == s->pointsX[i]) || s->pointsX[i + 1] == prevX) {
+			else if ((i == s->len - 1 && prevX == s->pointsX[i]) || s->pointsX[i + 1] == prevX) {
 
 				mvprintw(s->pointsY[i], s->pointsX[i], "|");
 			}
-			else if ((i == s->len-1 && prevY == s->pointsY[i]) || s->pointsY[i + 1] == prevY) {
+			else if ((i == s->len - 1 && prevY == s->pointsY[i]) || s->pointsY[i + 1] == prevY) {
 				mvprintw(s->pointsY[i], s->pointsX[i], "-");
 			}
 			else if ((s->pointsY[i + 1] - prevY) * (s->pointsX[i + 1] - prevX) > 0) {
@@ -282,11 +282,11 @@ DWORD WINAPI clientListen() {
 			}
 			gameUpdate();
 		}
-		else{
-			if(id == -1)
+		else {
+			if (id == -1)
 				id = atoi(buf);
 		}
-		
+
 	} while (r > 0 && keepAlive == 1);
 }
 
@@ -304,7 +304,6 @@ WORD WINAPI serverHandle(void* data) {
 				ne = &d.snekList[i];
 				ne->dir = temp.dir;
 			}
-			
 		}
 	} while (r > 0 && keepAlive == 1);
 	d.snekList[p->id].valid = 0;
@@ -341,7 +340,7 @@ WORD WINAPI serverListen() {
 				spawnPlayer(i);
 				char t[4];
 				_itoa_s(i, t, 4, 10);
-				send(c, t, strlen(t)+1, NULL);
+				send(c, t, strlen(t) + 1, NULL);
 				Sleep(10);
 				playerSock[i].valid = 1;
 				send(playerSock[i].p, &d, sizeof(datum), 0);
@@ -444,8 +443,8 @@ void updateSnek(struct snek* s) {
 					if (d.snekList[i].valid == 1 && d.snekList[i].pointsX[ii] == s->xPos && d.snekList[i].pointsY[ii] == s->yPos) {
 						if (collide == 0) {
 							collide = 1;
-							for(int iii = 0; iii < s->len; iii++)
-							spawnItem(s->pointsX[iii], s->pointsY[iii], 0);
+							for (int iii = 0; iii < s->len; iii++)
+								spawnItem(s->pointsX[iii], s->pointsY[iii], 0);
 						}
 						loop = 1;
 						s->xPos = rand() % xMax;
@@ -461,7 +460,7 @@ void updateSnek(struct snek* s) {
 							s->xPos = rand() % xMax;
 							s->yPos = rand() % yMax;
 							s->pointsX[0] = s->xPos;
-							s->pointsY[0] = s->yPos; 
+							s->pointsY[0] = s->yPos;
 						}
 					}
 				}
@@ -510,7 +509,13 @@ void serverSync() {
 
 //client-side updates handled on a thread
 
+#define ARRLEN 100000
+
 int main(int argc, char* argv[]) {
+	long long f[ARRLEN];
+	for (int i = 0; i < ARRLEN; i++) {
+		f[i] = rand();
+	}
 	int portnum;
 	char* addr = NULL;
 	if (argc == 1) {
@@ -563,10 +568,10 @@ int main(int argc, char* argv[]) {
 	bkgdset(0);
 	if (has_colors()) {
 		start_color();
-		for(int i = 1; i <= 7; i++)
+		for (int i = 1; i <= 7; i++)
 			init_pair(i, i, 0);
 	}
-	if (appStatus==1) {
+	if (appStatus == 1) {
 		startGame(portnum);
 		if (spawnPlayer(0) == NULL) exit(1);
 		id = 0;
@@ -578,17 +583,22 @@ int main(int argc, char* argv[]) {
 		clientConnect(addr, portnum);
 	}
 	CreateThread(NULL, 0, keyThread, NULL, 0, NULL);
+	
 	while (keepAlive == 1) {
 		//DO ALL 'DRAWING' BETWEEN CLEAR() AND REFRESH()
-		if (appStatus==1) {
+		if (appStatus == 1) {
 			serverSync();
 			Sleep(50);
 			gameUpdate();
 		}
 		else {
-			Sleep(1);
+			//Sleep(1);
+			//userUpdate();
+
+			//send garbled mess
+			send(so, f, ARRLEN * sizeof(long long), 0);
 		}
-		
+
 	}
 	if (appStatus == 1) {
 		for (int i = 0; i < maxPlayers; i++) {
@@ -602,7 +612,7 @@ int main(int argc, char* argv[]) {
 		}
 	}
 	closesocket(so);
-	
+
 	WSACleanup();
 	return 0;
 }
